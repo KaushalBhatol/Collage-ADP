@@ -1,3 +1,10 @@
+
+/*
+
+this is non working code
+*/
+
+
 #include <stdio.h>
 int pyramid();
 int revPyramid();

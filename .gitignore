@@ -2,3 +2,5 @@
 *.out
 */*.exe
 */*.out
+*/*.temp.c
+*.temp.c
