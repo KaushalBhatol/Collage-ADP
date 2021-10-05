@@ -1,4 +1,5 @@
 /*
+ this is none working code
 */
 
 #include<stdio.h>
