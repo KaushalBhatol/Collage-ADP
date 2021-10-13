@@ -9,8 +9,8 @@ Write a C program to print the following digit pyramid
 #include <stdio.h>
 void main()
 {
-    int i, j, k = 9, m;
-    for (i = 1; i <= 9; i++)
+    int i, j, k = 4, m;
+    for (i = 1; i <= 4; i++)
     {
         for (j = 1; j <= k; j++)
         {
