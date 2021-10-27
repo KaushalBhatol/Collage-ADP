@@ -1,5 +1,5 @@
 /*
-
+    write a program to do arthamatic operators using functions.
 */
 
 #include <stdio.h>
