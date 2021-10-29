@@ -3,15 +3,15 @@
 */
 
 #include <stdio.h>
-void additon(int, int);
-void substraction(int, int);
-void mult(int, int);
-void div(int, int);
+void additon();
+void substraction();
+void mult();
+void div();
 
 void main()
 {
     int choice, a, b;
-    printf("press 1 for additon\n2 for subtaction\n3 for multiplicateion \n4 for divison\n");
+    printf("press\n1 for additon\n2 for subtaction\n3 for multiplicateion \n4 for divison\n");
     scanf("%d", &choice);
     printf("enter a value = ");
     scanf("%d", &a);
