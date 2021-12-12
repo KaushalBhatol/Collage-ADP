@@ -1,3 +1,11 @@
+/*
+ * [x] Write a program to perform following operation string operations without using string manipulation functions.(Using switch case statement)
+ * [x] Find the length
+ * [x] Compare two string
+ * [x] Copy
+ * [x] Concatenation
+ * [x] Reverse
+ */
 #include <stdio.h>
 #include <string.h>
 #include <stdlib.h>
