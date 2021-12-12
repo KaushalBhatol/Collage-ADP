@@ -1,8 +1,11 @@
 /*
-Write a C program get 3X3 matrix from user and find addition, subtraction, division,
-multiplication of given matrix. Matrices operation can be perform only
-if numbers of columns are same as well as number of rows are same in both atrices
-(Using switch case statement).
+[x] Write a C program get 3X3 matrix from user and find
+[x] addition
+[x] subtraction
+[x] division
+[x] multiplication
+[ ] Matrices operation can be perform only if numbers of columns are same as well as number of rows are same in both atrices
+[x] (Using switch case statement).
 */
 #include <stdio.h>
 #include <stdlib.h>

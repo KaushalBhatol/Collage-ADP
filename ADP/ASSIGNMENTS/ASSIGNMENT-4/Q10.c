@@ -1,6 +1,6 @@
 /*
-* C Program to check if a given matrix is an identity matrix
-*/
+ * [x] C Program to check if a given matrix is an identity matrix
+ */
 #include <stdio.h>
 
 void main()

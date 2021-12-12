@@ -1,6 +1,6 @@
 /*
-Write a C Program to get 3X3 matrix from user and convert into transpose matrix.
-*/
+ * [X] Write a C Program to get 3X3 matrix from user and convert into transpose matrix.
+ */
 
 #include <stdio.h>
 
