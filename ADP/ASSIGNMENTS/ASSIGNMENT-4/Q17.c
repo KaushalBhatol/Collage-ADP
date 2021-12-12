@@ -1,7 +1,10 @@
 /*
- * [] Write a C Program to check whether the given number is Prime or not using UDF.
+ * [x] Write a C Program to check whether the given number is Prime or not using UDF.
  */
 #include <stdio.h>
+
+int prime();
+
 void main()
 {
     int num, res = 0;
@@ -9,9 +12,9 @@ void main()
     scanf("%d", &num);
     res = prime(num);
     if (res == 0)
-        printf("\n%d IS A PRIME NUMBER", num);
+        printf("\n%d IS A PRIME NUMBER\n", num);
     else
-        printf("\n%d IS NOT A PRIME NUMBER", num);
+        printf("\n%d IS NOT A PRIME NUMBER\n", num);
 }
 int prime(int n)
 {
