@@ -1,3 +1,8 @@
+/*
+ * [x] WAP to calculate addition, subtraction and multiplication on two 5 size 1-D arrays.
+ * [ ] Add the result in new array and display the resultant array in a  roper format.
+ * [ ] Also find average of both the arrays.
+ */
 #include <stdio.h>
 void main()
 {

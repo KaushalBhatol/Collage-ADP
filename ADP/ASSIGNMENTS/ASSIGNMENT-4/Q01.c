@@ -1,11 +1,14 @@
 /*
-Write a program to perform following operation 
-string operations with help of string manipulation 
+Write a program to perform following operation
+string operations with help of string manipulation
 functions.(Using switch case statement)
+
+Note: strrev function create for linux users.
 */
 
 #include <stdio.h>
 #include <string.h>
+char *strrev();
 
 void main()
 {
@@ -17,15 +20,15 @@ menu:
     scanf("%d", &choice);
 
     printf("\nstring1 value: ");
-    scanf("%s", &str1);
+    scanf("%s", str1);
     printf("string2 value: ");
-    scanf("%s", &str2);
+    scanf("%s", str2);
 
     switch (choice)
     {
     case 1:
-        printf("\t length of string1 is %d", strlen(str1));
-        printf("\t length of string2 is %d", strlen(str2));
+        printf("\t length of string1 is %ld", strlen(str1));
+        printf("\t length of string2 is %ld", strlen(str2));
         break;
 
     case 2:
@@ -82,4 +85,19 @@ menu2:
         printf("enter valid value\n");
         goto menu2;
     }
+}
+
+char *strrev(char *str)
+{
+    char *p1, *p2;
+
+    if (!str || !*str)
+        return str;
+    for (p1 = str, p2 = str + strlen(str) - 1; p2 > p1; ++p1, --p2)
+    {
+        *p1 ^= *p2;
+        *p2 ^= *p1;
+        *p1 ^= *p2;
+    }
+    return str;
 }
