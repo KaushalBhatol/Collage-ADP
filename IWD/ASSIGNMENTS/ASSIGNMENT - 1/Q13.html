@@ -1,0 +1,55 @@
+<!-- write an HTML code to perform Row-Span and Col-span in Table  -->
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Row span, col span</title>
+    <style type="text/css">
+        table,
+        td {
+            border: 2px solid blue;
+            margin: 50px auto 0 auto;
+            padding: 10px;
+        }
+    </style>
+</head>
+
+<body>
+    <div>
+        <TABLE>
+            <font face="arial" color="yellow">
+
+                <tr>
+                    <td colspan=2>
+                        <b>A</b>
+                    </td>
+                    <td rowspan=2>
+                        <b>B</b>
+                    </td>
+                </tr>
+
+                <tr>
+                    <td rowspan=2>
+                        <b>D</b>
+                    </td>
+                    <td>
+                        <center>
+                            <b>E</b>
+                        </center>
+                    </td>
+                </tr>
+
+                <tr>
+                    <td colspan=2>
+                        <b>C</b>
+                    </td>
+                </tr>
+            </font>
+        </TABLE>
+    </div>
+</body>
+
+</html>

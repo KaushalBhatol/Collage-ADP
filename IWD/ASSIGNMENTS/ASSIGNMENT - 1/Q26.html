@@ -1,0 +1,44 @@
+<!-- Write a JavaScript to find out of color  selected by user from button and change the background  -->
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Background Changing</title>
+    <script>
+        function changeBackground(input) {
+            var bg, color;
+            switch (input) {
+                case 1:
+                    bg = 'blue';
+                    color = 'white';
+                    break;
+                case 2:
+                    bg = 'green';
+                    color = 'red';
+                    break;
+                case 3:
+                    bg = 'yellow';
+                    color = 'black';
+                    break;
+            }
+            document.body.style.background = bg;
+            document.body.style.color = color;
+        }
+    </script>
+</head>
+
+<body>
+    <div>
+        <h2>Hello World</h2>
+        <input type="button" onclick="changeBackground(1);" value="Blue">
+        <input type="button" onclick="changeBackground(2);" value="red">
+        <input type="button" onclick="changeBackground(3);" value="Yellow">
+    </div>
+
+</body>
+
+</html>

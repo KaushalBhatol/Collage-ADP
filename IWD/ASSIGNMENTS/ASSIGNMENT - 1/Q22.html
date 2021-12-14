@@ -1,0 +1,54 @@
+<!-- Write a JavaScript to find the Factorial of a given number. -->
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Find Factorial</title>
+    <style type="text/css">
+        input {
+            margin: 10px;
+        }
+
+        form>input:first-of-type {
+            color: blue;
+            width: 100px;
+        }
+
+        input#result,
+        input#result:hover {
+            border: 0;
+            text-align: center;
+            color: green;
+        }
+
+        input[type="button"] {
+            width: 150px;
+        }
+    </style>
+    <script>
+        function factorialGet() {
+            let a, i, fact = 1;
+            a = document.myForm.input.value;
+            for (i = 1; i <= a; i++) {
+                fact *= i;
+            }
+            document.myForm.result.value = 'factorial of ' + a + ' is ' + fact;
+        }
+    </script>
+</head>
+
+<body>
+    <div>
+        <h3>Find Factorial</h3>
+        <form name="myForm">
+            Input value: <input type="number" name="input"> <br>
+            <input type="text" id="result" name="result" readonly> <br>
+            <input type="button" value="Cheack" onclick="factorialGet()"> <input type="reset" value="clear"> <br>
+        </form>
+    </div>
+</body>
+
+</html>

@@ -1,0 +1,60 @@
+<!--  
+* [x] Write a JavaScript  to perform  Addition , Subtraction , Multiplication , Division and Modulo 
+* [x] using buttons of the given two numbers
+-->
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Arthamatic Oprators</title>
+    <style type="text/css">
+        ul li {
+            list-style-type: none;
+            padding: 5px 5px;
+        }
+
+        input[type="number"] {
+            width: 80px;
+        }
+
+        li.result input {
+            border: 0;
+            color: green;
+        }
+    </style>
+    <script type="text/JavaScript">
+        function myFun() {
+            let a, b;
+            a = parseInt(document.getElementById("firstInput").value);
+            b = parseInt(document.getElementById("secondInput").value);
+
+            document.getElementById("addition").value = a + ' + ' + b + ' = ' +  (a + b);
+            document.getElementById("subtraction").value = a + ' - ' + b + ' = ' + (a - b);
+            document.getElementById("multiplication").value = a + ' * ' + b + ' = ' + (a * b);
+            document.getElementById("division").value = a + ' / ' + b + ' = ' + (a / b);
+        }
+    </script>
+</head>
+
+<body>
+    <div>
+        <h2>Arthamatic Oprators</h2>
+        <form>
+            <ul>
+                <li>Enter value of a: &nbsp;<input type="number" id="firstInput"></li>
+                <li>Enter value of b: &nbsp;<input type="number" id="secondInput"></li>
+                <li><input type="button" onclick='myFun();' value="calculate"> <input type="reset" value="clear"></li>
+                <li class="result"><input type="text" id="addition" readonly></li>
+                <li class="result"><input type="text" id="subtraction" readonly></li>
+                <li class="result"><input type="text" id="multiplication" readonly></li>
+                <li class="result"><input type="text" id="division" readonly></li>
+            </ul>
+        </form>
+    </div>
+</body>
+
+</html>

@@ -1,0 +1,51 @@
+<!-- Write a JavaScript to find out area of circle. -->
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Find ara of Circle</title>
+    <style type="text/css">
+        input {
+            margin: 10px;
+        }
+
+        form>input:first-of-type {
+            color: blue;
+            width: 100px;
+        }
+
+        input#result {
+            border: 0;
+            text-align: center;
+            color: green;
+            font-size: large;
+        }
+
+        input[type="button"] {
+            width: 150px;
+        }
+    </style>
+    <script>
+        const PI = 3.14;
+        function findAria() {
+            let r = document.myForm.input.value;
+            document.myForm.result.value = `area of circle is = ` + (PI * r * r);
+        }
+    </script>
+</head>
+
+<body>
+    <div>
+        <h3>Find ara of Circle</h3>
+        <form name="myForm">
+            Input value: <input type="number" name="input"> <br>
+            <input type="text" id="result" name="result" readonly> <br>
+            <input type="button" value="Cheack" onclick="findAria()"> <input type="reset" value="clear"> <br>
+        </form>
+    </div>
+</body>
+
+</html>

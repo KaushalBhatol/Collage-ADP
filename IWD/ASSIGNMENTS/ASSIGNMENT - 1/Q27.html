@@ -1,0 +1,86 @@
+<!-- 
+ * [x] Write a JavaScript to find out percentage , 
+ * [x] grade 
+ * [x] total result of a 3 student subject mark. 
+-->
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Marksheet</title>
+    <style type="text/css">
+        input {
+            margin: 5px;
+        }
+
+        .output>input {
+            border: 0;
+            width: 440px;
+        }
+    </style>
+
+</head>
+
+<body>
+    <div>
+        <h2>Marks Calculating</h2>
+
+        <form name="result">
+            Name: <input type="text" name="sName"> <br>
+            Maths marks: <input type="number" name="sub1"> <br>
+            English marks: <input type="number" name="sub2"> <br>
+            Science marks: <input type="number" name="sub3"> <br>
+            <input type="button" value="Print Result" onclick="cheack();"><input type="reset" value="Reset"> <br>
+            <!-- Output  -->
+            <span class="output">
+                <input type="text" name="Oname" readonly> <br />
+                <input type="text" name="Ototal" readonly> <br />
+                <input type="text" name="Oper" readonly> <br />
+                <input type="text" name="Ogrd" readonly> <br />
+            </span>
+
+        </form>
+    </div>
+</body>
+<script>
+    function cheack() {
+        let name, m1, m2, m3, total, per, grd;
+        name = document.result.sName.value;
+        m1 = parseInt(document.result.sub1.value);
+        m2 = parseInt(document.result.sub2.value);
+        m3 = parseInt(document.result.sub3.value);
+        total = m1 + m2 + m3;
+        per = total / 3;
+
+        // Finding Grade
+
+        if (per > 90) {
+            grd = 'You got A grade!!';
+        }
+        else if (per > 75 && per < 90) {
+            grd = 'You got B grade!!';
+        }
+        else if (per > 50 && per < 75) {
+            grd = 'You got C grade!!';
+        }
+        else if (per > 35 && per < 50) {
+            grd = 'You got D grade!';
+        }
+        else {
+            grd = 'You Faild the Exam!';
+        }
+
+        // output
+        document.result.Oname.value = 'Student Name: ' + name;
+        document.result.Ototal.value = 'Total Marks: ' + total;
+        document.result.Oper.value = 'Percentage: ' + per;
+        document.result.Ogrd.value = grd;
+
+    }
+</script>
+
+</html>

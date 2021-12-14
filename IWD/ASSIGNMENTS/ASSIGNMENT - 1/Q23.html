@@ -1,0 +1,51 @@
+<!-- Write a JavaScript to find square of given number. -->
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Find Square</title>
+    <style type="text/css">
+        input {
+            margin: 10px;
+        }
+
+        form>input:first-of-type {
+            color: blue;
+            width: 100px;
+        }
+
+        input#result,
+        input#result:hover {
+            border: 0;
+            text-align: center;
+            color: green;
+        }
+
+        input[type="button"] {
+            width: 150px;
+        }
+    </style>
+    <script>
+        function findSquare() {
+            let a = document.myForm.input.value;
+            document.myForm.result.value = 'square of ' + a + ' is ' + (a * a);
+        }
+    </script>
+</head>
+
+<body>
+    <div>
+        <h3>Find Square</h3>
+        <form name="myForm">
+            Input value: <input type="number" name="input"> <br>
+            <input type="text" id="result" name="result" readonly> <br>
+            <input type="button" value="Cheack" onclick="findSquare()"> <input type="reset" value="clear"> <br>
+        </form>
+    </div>
+</body>
+
+</html>

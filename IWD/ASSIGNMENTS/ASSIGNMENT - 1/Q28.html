@@ -1,0 +1,39 @@
+<!-- Write a JavaScript to find out given, string  is palindrome or not. -->
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>String is palindrome or not</title>
+    <style>
+        p {
+            font-size: large;
+        }
+    </style>
+</head>
+
+<body>
+    <div>
+        <h2>String is palindrome or not</h2>
+        <p>
+            <script>
+                function validatePalin(str) {
+                    const len = string.length;
+                    for (let i = 0; i < len / 2; i++) {
+                        if (string[i] !== string[len - 1 - i]) {
+                            return 'It is not a palindrome';
+                        }
+                    }
+                    return 'It is a palindrome';
+                }
+                const string = prompt('ENTER THE STRING & NUMBER: ');
+                const value = validatePalin(string);
+                document.write(string + ', ' + value);  
+            </script>
+        </p>
+    </div>
+</body>
+
+</html>

@@ -1,0 +1,59 @@
+<!-- 
+ * Write a JavaScript to find the sum of digits of given numbers .
+ * (Example : 235 ,output : 2+3+5=10) 
+-->
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sum Of Digits</title>
+    <style type="text/css">
+        input {
+            margin: 10px;
+        }
+
+        form>input:first-of-type {
+            color: blue;
+            width: 100px;
+        }
+
+        input#result,
+        input#result:hover {
+            border: 0;
+            text-align: center;
+            color: green;
+        }
+
+        input[type="button"] {
+            width: 150px;
+        }
+    </style>
+    <script>
+        function sumDigits() {
+            let input = parseInt(document.getElementById("input").value);
+            let numArr = input.toString().split('');
+            let sum = numArr.reduce((a, b) => Number(a) + Number(b));
+            document.getElementById("result").value = sum < 10 ? sum : sums(sum);
+        }
+    </script>
+</head>
+
+<body>
+
+    <body>
+        <div>
+            <h3>Find sum of digits</h3>
+            <form>
+                Input value: <input type="number" id="input"> <br>
+                <input type="text" id="result" readonly> <br>
+                <input type="button" value="Cheack" onclick="sumDigits()"> <input type="reset" value="clear"> <br>
+            </form>
+        </div>
+    </body>
+</body>
+
+</html>
